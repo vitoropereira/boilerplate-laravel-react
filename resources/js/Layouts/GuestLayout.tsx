@@ -1,13 +1,17 @@
-import ApplicationLogo from '@/Components/ApplicationLogo';
-import { Link } from '@inertiajs/react';
-import { PropsWithChildren } from 'react';
+import ApplicationLogo from "@/Components/ApplicationLogo";
+import { Link } from "@inertiajs/react";
+import { PropsWithChildren } from "react";
 
 export default function Guest({ children }: PropsWithChildren) {
     return (
         <div className="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
-                <Link href="/">
-                    <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                <Link
+                    className="flex justify-center items-center flex-col"
+                    href="/"
+                >
+                    <ApplicationLogo className="fill-current text-gray-500" />
+                    <p className="text-lg">Planilha Vou na Bolsa</p>
                 </Link>
             </div>
 
